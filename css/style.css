@@ -1,0 +1,49 @@
+h1 {
+	text-align: center;
+	color: crimson;
+	font-family: Helvetica;
+}
+
+p {
+	font-family: Helvetica;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* spacing between links */
+}
+
+.header a {
+	text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+	font-family: Helvetica;
+}
+
+.header a.active {
+    background-color: crimson;
+	color: white;
+}
+
+/* hover effect */
+.header a:hover {
+    background-color: #ed3c5f;
+	color: white;
+}
+
+/* controls image and text alignment */
+.biography {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* controls text readability */
+.biographyText {
+    padding: 20px;
+    max-width: 600px;
+}
+
+

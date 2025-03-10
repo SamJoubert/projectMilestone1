@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<title>Project Milestone #1 Contact</title>
+</head>
+
+<body>
+<h1>Contact</h1>
+<header>
+<!-- header with 3 pages -->
+<div class="header">
+<a href="index.html">Home</a>
+<a class="active" href="contact.html">Contact</a>
+<a href="about.html">About</a>
+</div>
+</header>
+
+<p>Please use the following textbox to write a message to me:</p>
+
+<!-- empty textbox which can read text input and display it in the url when a button is pressed -->
+<form onsubmit="return validateForm()">
+<input type="text" id="message" name="message">
+<br><br>
+<input type="submit" value="Submit">
+<p id="errorMessage" style="color: red;"></p>
+</form>
+
+<!-- script that displays a message if the textbox is empty when submit is clicked -->
+<script>
+function validateForm() {
+let input = document.getElementById("message").value;
+if (input.trim() === "") {
+document.getElementById("errorMessage").innerText = "Message cannot be empty!";
+return false;
+}
+return true;
+}
+</script>
+
+</body>
+</html>
